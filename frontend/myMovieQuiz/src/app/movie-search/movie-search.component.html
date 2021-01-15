@@ -1,0 +1,10 @@
+<div class="text-center">
+            
+        <form autocomplete="off" #searchMovie="ngForm"
+            (ngSubmit)= submitForm(searchMovie.value)>
+            <input type="text" name="movieSearch"
+                (ngModel)="model.search">
+        </form>
+    
+</div>
+

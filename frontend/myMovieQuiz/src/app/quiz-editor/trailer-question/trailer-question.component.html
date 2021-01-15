@@ -1,0 +1,23 @@
+<div class="d-flex justify-content-center mt-2 " style="height: 400px">
+
+  <div class="border row col-md-5 d-flex justify-content-center"
+      style="background-color: rgba(179, 218, 218, 0.1);">      
+
+      <video id="trailer" controls width="320" height="240"
+      crossOrigin="anonymous" class="my-auto"
+      [attr.src]="videoSource">
+      </video>
+
+  </div> 
+
+  <div class="border row col-md-5 d-flex justify-content-center"
+    style="background-color: rgba(179, 218, 218, 0.1);">
+    <div class="my-auto">
+      <img [attr.src]="imageSource" width="560px" height="345px" style="border:1px" alt="">
+    </div>
+  </div>
+
+  <canvas id="canvas" style="display: none;"></canvas>
+</div>
+
+<button class= "btn btn-danger" (click)="takePicture()">ShowMe!</button>

@@ -1,0 +1,10 @@
+{ "\/api": {
+    "target": "https://r5---sn-25glen7e.googlevideo.com/",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^\/api": "/"
+    }
+  }
+}
